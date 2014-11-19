@@ -48,7 +48,7 @@ public class sortarithms {
 			stopwatch.start();
 			SelectionSort(SelectionSortList);			
 			stopwatch.stop();
-			trialTimes[trial][1] =stopwatch.elapsed(TimeUnit.MICROSECONDS);
+			trialTimes[trial][1] = stopwatch.elapsed(TimeUnit.MICROSECONDS);
 			stopwatch.reset();
 			
 			// Do the sort w/ Quicksort3 and time it.
@@ -177,7 +177,37 @@ public class sortarithms {
 			else return c;
 		}
 		else return a;
-	}
-	
+	}	
 }
+
+/*
+Output:
+
+Trial:	Bubble Sort:	Selection Sort:	QuickSort3:
+1	948032		743627		6707
+2	961259		678624		1995
+3	935974		673420		2028
+4	937565		739539		2059
+5	985564		671828		3231
+6	930571		673352		2071
+7	926236		749177		2035
+8	949206		673486		2063
+9	928279		704317		3057
+10	996184		668362		2039
+11	929701		672682		2126
+12	938688		751066		2072
+13	979395		673842		3090
+14	957481		676958		2068
+15	935713		687042		2068
+16	1002715		678541		2220
+17	935684		669391		1956
+18	1020176		668480		3082
+19	988969		677663		1992
+20	935815		708197		3408
+21	945996		681760		1990
+22	941863		671509		2028
+23	943167		744019		2025
+24	997042		685407		1998
+25	923584		663709		1970
+ */
 
